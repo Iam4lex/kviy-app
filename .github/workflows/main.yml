@@ -56,9 +56,9 @@ jobs:
           command: buildozer -v android debug
           buildozer_version: stable
 
-      # Step 8: Upload artifacts (the built APK)
+      # Step 8: Upload APK as an artifact
       - name: Upload APK
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3  # Updated version
         with:
           name: app-debug.apk
           path: ./bin/*.apk  # Ensure this path matches the output location of your APK
