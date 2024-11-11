@@ -3,11 +3,11 @@ name: CI
 on: 
   push:
     branches: [ main ]
- 
+
 jobs:
   build:
     runs-on: ubuntu-20.04
- 
+
     steps:
       # Step 1: Check out the repository
       - name: Checkout repository
